@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.projetosdecaixasdesomautomotivo"
+    android:installLocation="preferExternal"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/carpinteiro"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="br.com.view.Inicio"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.com.view.CadastrarCarro"
+            android:label="@string/title_activity_cadastrar_carro"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="br.com.projetosdecaixasdesomautomotivo.Teste"
+            android:label="@string/title_activity_teste" >
+        </activity>
+        <activity
+            android:name="br.com.view.CadastrarEquipanto"
+            android:label="@string/title_activity_cadastrar_equipanto"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="br.com.view.Mostrar_all"
+            android:label="@string/title_activity_mostrar_all"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="br.com.view.CadastrarCaixas"
+            android:label="@string/title_activity_cadastrar_caixas"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="br.com.view.Lista_veiculo_equipamento"
+            android:label="@string/title_activity_lista_veiculo_equipamento"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="br.com.projetosdecaixasdesomautomotivo.MostrarCaixaMedidas"
+            android:label="@string/title_activity_mostrar_caixa_medidas" >
+        </activity>
+    </application>
+
+</manifest>

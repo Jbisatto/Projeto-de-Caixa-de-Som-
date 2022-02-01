@@ -1,0 +1,448 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CadastrarCaixas" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/txtVeiculo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:text="Veículo:" />
+
+                <EditText
+                    android:id="@+id/edtNomeVeiculo"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1" >
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/btProcurar_veiculo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_weight="2.4"
+                    android:src="@drawable/pesquisar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/txtSub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:text="Subwoofer:" />
+
+                <EditText
+                    android:id="@+id/edtNomeSub"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1" >
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/btProcurar_sub"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.4"
+                    android:src="@drawable/pesquisar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp" >
+
+                <TextView
+                    android:id="@+id/txtTipo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.1"
+                    android:gravity="right|center_vertical"
+                    android:text="Tipo: " />
+
+                <RadioButton
+                    android:id="@+id/radioSelado"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.7"
+                    android:gravity="center_vertical"
+                    android:text="Selado" />
+
+                <RadioButton
+                    android:id="@+id/radioDutado"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.9"
+                    android:gravity="center_vertical"
+                    android:text="Dutado" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Espessura da madeira:" />
+
+                <Button
+                    android:id="@+id/btMenos"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:drawable/arrow_up_float"
+                    android:rotation="-90" />
+
+                <TextView
+                    android:id="@+id/txtEspesura"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/_10"
+                    android:textColor="#00008B"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/mm"
+                    android:textColor="#00008B"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btMais"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:drawable/arrow_up_float"
+                    android:rotation="90" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtTituloMedidas"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/medidas_externas_da_caixa"
+                android:textStyle="bold|italic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp" >
+
+                <TextView
+                    android:id="@+id/txtComprimento"
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:gravity="right"
+                    android:text="@string/comprimento_" />
+
+                <EditText
+                    android:id="@+id/edt_comprimento_caixa"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:textSize="13dp" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp" >
+
+                <TextView
+                    android:id="@+id/txtAltura"
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:gravity="right"
+                    android:text="@string/altura_" />
+
+                <EditText
+                    android:id="@+id/edt_altura_caixa"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:textSize="13dp" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp" >
+
+                <TextView
+                    android:id="@+id/txtLarguInf"
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:gravity="right"
+                    android:text="@string/largura_inferior_" />
+
+                <EditText
+                    android:id="@+id/edt_largura_superior_caixa"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:textSize="13dp" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp" >
+
+                <TextView
+                    android:id="@+id/txtLarSup"
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:gravity="right"
+                    android:text="@string/largura_superior_" />
+
+                <EditText
+                    android:id="@+id/edt_largura_infeior_caixa"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:textSize="13dp" >
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textDUTO"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="Duto"
+                android:textStyle="bold|italic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp" >
+
+                <TextView
+                    android:id="@+id/txtdiamDuto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:text="Diam. ( &quot; ):" />
+
+                <EditText
+                    android:id="@+id/edtDutoPolegadas"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:nextFocusDown="@+id/edtComprimento_duto"
+                    android:textSize="13dp" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/txtCompriDuto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="right"
+                    android:text="Comp. (cm):" />
+
+                <EditText
+                    android:id="@+id/edtComprimento_duto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:textSize="13dp" >
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewA"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="Volumes"
+                android:textStyle="bold|italic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_weight="2" >
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" >
+
+                        <TextView
+                            android:id="@+id/txtvolumeSub"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="@string/volume_recomendado_para_esse_subwoofer_" />
+
+                        <TextView
+                            android:id="@+id/volumeSub"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textViewB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="V. Int. da caixa:" />
+
+                        <TextView
+                            android:id="@+id/volumeInterno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp" >
+
+                        <TextView
+                            android:id="@+id/txtvolumeExt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="V. Ext da caixa:" />
+
+                        <TextView
+                            android:id="@+id/volumeExterno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp" >
+
+                        <TextView
+                            android:id="@+id/txtCalculoHipo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="Tampa Traseira:" />
+
+                        <TextView
+                            android:id="@+id/valorHipotenusa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" >
+
+                    <TableRow
+                        android:id="@+id/tableRow4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <Button
+                            android:id="@+id/btCalcular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="40dp"
+                            android:background="@android:drawable/ic_menu_rotate" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <Button
+                            android:id="@+id/btCaixa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Caixa" />
+
+                    </TableRow>
+                </TableLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp" >
+
+                <Button
+                    android:id="@+id/btOKCaixa"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/ok" />
+
+                <Button
+                    android:id="@+id/btCanCaixa"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/cancelar" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

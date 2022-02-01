@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	     <TextView
+        android:id="@+id/nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:text="Large Text"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/editar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/deletar"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/deletar"
+        android:src="@drawable/editar2" />
+
+    <ImageView
+        android:id="@+id/deletar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/edit_delete" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editar"
+        android:layout_marginTop="20dp"
+        android:text="Tipo de caixa:" />
+
+    <TextView
+        android:id="@+id/textViewA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:text="Espessura da madeira (cm):" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewA"
+        android:layout_below="@+id/textViewA"
+        android:text="Comprimento(cm):" />
+
+    <TextView
+        android:id="@+id/textViewB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:text="Altura(cm):" />
+
+    <TextView
+        android:id="@+id/txttipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewA"
+        android:layout_toLeftOf="@+id/editar"
+         />
+
+    <TextView
+        android:id="@+id/txtEspessura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_toLeftOf="@+id/editar"/>
+
+    <TextView
+        android:id="@+id/txtAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewB"
+        android:layout_alignBottom="@+id/textViewB"
+        android:layout_toLeftOf="@+id/editar" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewB"
+        android:text="Largura Inferior (cm):" />
+
+    <TextView
+        android:id="@+id/textViewC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView5"
+        android:text="Largura Superior (cm):" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewC"
+        android:text="Duto(&quot;):" />
+
+    <TextView
+        android:id="@+id/txtComprimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toLeftOf="@+id/editar" />
+
+    <TextView
+        android:id="@+id/txtLarInf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAltura"
+        android:layout_toLeftOf="@+id/editar" />
+
+    <TextView
+        android:id="@+id/txtLarSup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewC"
+        android:layout_alignBottom="@+id/textViewC"
+        android:layout_toLeftOf="@+id/editar" />
+
+    <TextView
+        android:id="@+id/txtCompDuto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewD"
+        android:layout_alignBottom="@+id/textViewD"
+        android:layout_toLeftOf="@+id/editar"/>
+
+    <TextView
+        android:id="@+id/txtDiaDuto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_alignTop="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textViewD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtDiaDuto"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/txtDiaDuto"
+        android:text="Comp.(cm):" />
+
+</RelativeLayout>
